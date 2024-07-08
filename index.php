@@ -1,35 +1,7 @@
-<!DOCTYPE html>
-<html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CONSTRUCTORA-EDISA</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</head>
-
-<body>
-    <header>
-        <div class="logo">
-            <img src="img/logo.png" alt="logo-edisa">
-            <h1> PROYECTOS Y CONSTRUCCIÓN EDISA</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
+<?php   
+require("header.php");
+?>
     <section id="inicio">
         <!-- <div class="hero">
             <h1>Líderes en la industria de la construcción</h1>
@@ -41,98 +13,129 @@
             <a href="#servicios" class="btn">Ver más</a>
         </div> -->
     </section>
-    <section id="servicios">
-        <h2>Nuestros Servicios</h2>
-        <div class="services-container">
-            <div class="service">
-                <h3>Obra civil</h3>
-                <img src="img/estructuras.jpeg" alt="construcción">
-                <p>Desarrollamos y ejecutamos proyectos de construcción con alta calidad, asesorando en diseños de planos y materiales de construcción.</p>
+<section id="servicios" class="py-5 bg-secondary text-white">
+    <div class="container">
+        <h2 class="text-center mb-5">Nuestros Servicios</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card bg-light text-dark">
+                    <img src="img/estructuras.jpeg" class="card-img-top" alt="Obra civil">
+                    <div class="card-body">
+                        <h3 class="card-title">Obra civil</h3>
+                        <p class="card-text">Desarrollamos y ejecutamos proyectos de construcción con alta calidad, asesorando en diseños de planos y materiales de construcción.</p>
+                    </div>
+                </div>
             </div>
-            <div class="service">
-                <h3>Acabado de interiores</h3>
-                <img src="img/pasillo.jpg" alt="energía">
-                <p>Contamos con equipos y sistemas de energía eficientes y sostenibles para proyectos residenciales, comerciales e industriales.</p>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-light text-dark">
+                    <img src="img/pasillo.jpg" class="card-img-top" alt="Acabado de interiores">
+                    <div class="card-body">
+                        <h3 class="card-title">Acabado de interiores</h3>
+                        <p class="card-text">Contamos con equipos y sistemas de energía eficientes y sostenibles para proyectos residenciales, comerciales e industriales.</p>
+                    </div>
+                </div>
             </div>
-            <div class="service">
-                <h3>Carpintería</h3>
-                <img src="img/madera1.jpeg" alt="construcción">
-                <p>Desarrollamos y ejecutamos proyectos de carpintería con alta calidad, asesorando en diseños de planos y materiales de construcción (exteriores, aluminio, decorativa e industrial).</p>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-light text-dark">
+                    <img src="img/madera1.jpeg" class="card-img-top" alt="Carpintería">
+                    <div class="card-body">
+                        <h3 class="card-title">Carpintería</h3>
+                        <p class="card-text">Desarrollamos y ejecutamos proyectos de carpintería con alta calidad, asesorando en diseños de planos y materiales de construcción.</p>
+                    </div>
+                </div>
             </div>
-            <div class="service">
-                <h3>Impermeabilización</h3>
-                <img src="img/techo.jpg" alt="construcción">
-                <p>Desarrollamos y ejecutamos proyectos de impermeabilización de alta calidad, asesorando en materiales de construcción (acrílicos, asfálticos, cementosos, mantos prefabricados y poliuretanos)
-                <ul>
-                    <li>Acrílicos.</li>
-                    <li>Asfálticos.</li>
-                    <li>Cementosos.</li>
-                    <li>Mantos prefabricados.</li>
-                    <li>Poliuretanos.</li>
-
-                </ul>
-                </p>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-light text-dark">
+                    <img src="img/techo.jpg" class="card-img-top" alt="Impermeabilización">
+                    <div class="card-body">
+                        <h3 class="card-title">Impermeabilización</h3>
+                        <p class="card-text">Desarrollamos y ejecutamos proyectos de impermeabilización de alta calidad, asesorando en materiales de construcción:
+                            <ul>
+                                <li>Acrílicos.</li>
+                                <li>Asfálticos.</li>
+                                <li>Cementosos.</li>
+                                <li>Mantos prefabricados.</li>
+                                <li>Poliuretanos.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="service">
-                <h3>Herrería</h3>
-                <img src="img/domo1.jpeg" alt="construcción">
-                <p>Desarrollamos y ejecutamos proyectos de herrería de la más alta calidad, asesorando en diseños y en materiales de construcción.
-                <ul>
-                    <li>Herrería ornamental a nivel residencial y comercial.</li>
-                    <li>Naves industriales.</li>
-                    <li>Arcotechos.</li>
-                    <li>Portones.</li>
-                    <li>Puertas.</li>
-                    <li>Ventanas.</li>
-                    <li>Barandales.</li>
-                    <li>Protecciones.</li>
-                </ul>
-                </p>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-light text-dark">
+                    <img src="img/domo1.jpeg" class="card-img-top" alt="Herrería">
+                    <div class="card-body">
+                        <h3 class="card-title">Herrería</h3>
+                        <p class="card-text">Desarrollamos y ejecutamos proyectos de herrería de la más alta calidad, asesorando en diseños y en materiales de construcción:
+                            <ul>
+                                <li>Herrería ornamental a nivel residencial y comercial.</li>
+                                <li>Naves industriales.</li>
+                                <li>Arcotechos.</li>
+                                <li>Portones.</li>
+                                <li>Puertas.</li>
+                                <li>Ventanas.</li>
+                                <li>Barandales.</li>
+                                <li>Protecciones.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="service">
-                <h3>Acabado de interiores y Exteriores</h3>
-                <img src="img/epoxico.jpg" alt="pisos epoxicos">
-                <p>Desarrollamos y ejecutamos proyectos de acabados esteticos y de calidad, asesorando en diseños y materiales de construcción.
-                <ul>
-                    <li>Pisos epoxicos.</li>
-                    <li>Pisos de grado quirurjico.</li>
-
-                </ul>
-                </p>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-light text-dark">
+                    <img src="img/epoxico.jpg" class="card-img-top" alt="Acabado de interiores y Exteriores">
+                    <div class="card-body">
+                        <h3 class="card-title">Acabado de interiores y Exteriores</h3>
+                        <p class="card-text">Desarrollamos y ejecutamos proyectos de acabados estéticos y de calidad, asesorando en diseños y materiales de construcción:
+                            <ul>
+                                <li>Pisos epoxicos.</li>
+                                <li>Pisos de grado quirurjico.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="service">
-                <h3>Tabla Roca</h3>
-                <img src="img/arco4.jpg" alt="Tablaroca">
-                <p>Realizamos proyectos de acabados estéticos y de alta calidad en tablaroca, proporcionando soluciones personalizadas y adaptadas a las necesidades de nuestros clientes. Nuestros servicios incluyen:</p>
-                <ul>
-                    <li>Paredes Interiores</li>
-                    <li>Techos Falsos</li>
-                    <li>Plafones</li>
-                    <li>Revestimiento de Paredes Existentes</li>
-                    <li>Muebles y Elementos Decorativos</li>
-                    <li>Reformas y Renovaciones</li>
-
-                </ul>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-light text-dark">
+                    <img src="img/arco4.jpg" class="card-img-top" alt="Tabla Roca">
+                    <div class="card-body">
+                        <h3 class="card-title">Tabla Roca</h3>
+                        <p class="card-text">Realizamos proyectos de acabados estéticos y de alta calidad en tablaroca, proporcionando soluciones personalizadas y adaptadas a las necesidades de nuestros clientes. Nuestros servicios incluyen:
+                            <ul>
+                                <li>Paredes Interiores</li>
+                                <li>Techos Falsos</li>
+                                <li>Plafones</li>
+                                <li>Revestimiento de Paredes Existentes</li>
+                                <li>Muebles y Elementos Decorativos</li>
+                                <li>Reformas y Renovaciones</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
             </div>
-
-            <div class="service">
-                <h3>Canceleria y aluminio</h3>
-                <img src="img/aluminio.png" alt="ALUMINIO">
-                <p>Ofrecemos soluciones de alta calidad en cancelería y aluminio, diseñadas para satisfacer las necesidades específicas de cada proyecto. </p>
-                <ul>
-                    <li>Fijas</li>
-                    <li>Corredizas</li>
-                    <li>Abatibles Vasistas</li>
-                    <li>Proyección</li>
-                    <li>Paralelas Plegadizas</li>
-                    <li>Oscilobatiente Levadizas</li>
-                    <li>Cierre o esquina</li>
-                </ul>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-light text-dark">
+                    <img src="img/aluminio.png" class="card-img-top" alt="Canceleria y aluminio">
+                    <div class="card-body">
+                        <h3 class="card-title">Canceleria y aluminio</h3>
+                        <p class="card-text">Ofrecemos soluciones de alta calidad en cancelería y aluminio, diseñadas para satisfacer las necesidades específicas de cada proyecto:
+                            <ul>
+                                <li>Fijas</li>
+                                <li>Corredizas</li>
+                                <li>Abatibles Vasistas</li>
+                                <li>Proyección</li>
+                                <li>Paralelas Plegadizas</li>
+                                <li>Oscilobatiente Levadizas</li>
+                                <li>Cierre o esquina</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
             </div>
-
         </div>
+    </div>
+</section>
 
-    </section>
 
     <section id="proyectos">
         <h2>Proyectos</h2>
@@ -268,6 +271,7 @@
         </div>
     </div>
 </section>
+
 <section id="contacto">
     <h2>Contacto</h2>
     <div class="contact-wrapper">

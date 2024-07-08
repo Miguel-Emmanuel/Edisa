@@ -91,12 +91,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: rgb(29, 105, 139);
+    background-color: rgb(96, 111, 138);
     color: white;
+    list-style:decimal-leading-zero;
     box-shadow: 0 10px 20px rgba(0, 255, 213, 0.3);
-    font-size: x-large;
+    font-size: large;
 }
-
 /* Media queries para dispositivos móviles */
 @media (max-width: 768px) {
     nav ul {
@@ -117,6 +117,9 @@ nav ul li a:hover {
     }
 }
 
+
+
+
 .hero img {
     width: 400px;
     /* Ajusta el ancho deseado */
@@ -127,18 +130,13 @@ nav ul li a:hover {
     max-width: 100%;
     margin-right: 10px;
 }
-
-section {
-    padding: 10px;
-    margin: 10px;
-    background-color: rgb(0, 0, 0);
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
+ 
 
 section h2 {
+    text-align: center;
+    align-items: center;
     font-size: xx-large;
-    margin: unset auto;
+    margin: 40px;
     padding: unset;
     color: #003366;
     background-color: rgb(177, 177, 177);
@@ -181,96 +179,51 @@ section h2 {
 .btn:hover {
     background-color: #0056b3;
 }
-
+/* /////////////////////SERVICIOS/////////////////////// */
 #servicios {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: #8aa5ff;
-    /* opacity: 0.8; */
+    background-color: #6c757d; /* Gris oscuro */
+    color: white;
+    padding: 60px 0;
 }
 
-
-#servicios h2 {
-    color: #003366;
-    /* Azul oscuro */
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.services-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.service {
-    background-color: #f0f0f0;
-    border-radius: 10px;
+#servicios .card {
+    border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.2s;
 }
 
-.service:hover {
+#servicios .card:hover {
     transform: scale(1.05);
 }
 
-.service h3 {
-    color: #0074D9;
-    /* Azul más claro */
-    font-size: 1.5em;
-    margin-bottom: 15px;
+#servicios .card-img-top {
+    border-radius: 5px 5px 0 0;
 }
 
-.service li {
-    list-style: none;
-
-    margin: 10px;
-    color: rgb(87, 84, 84);
+#servicios .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-.service img {
-    width: 200px;
-    /* Ajusta el ancho deseado */
-    height: 200px;
-    /* Ajusta la altura deseada */
-    object-fit: cover;
-    /* Asegura que la imagen mantenga su proporción y llene el espacio */
+#servicios .card-text {
+    font-size: 1rem;
+}
+
+#servicios .container img {
     max-width: 100%;
-    margin-right: 10px;
+    height: auto;
+    border-radius: 5px;
 }
 
-.service p {
-    color: #555555;
-    /* Gris oscuro */
-    font-size: 1em;
-    line-height: 1.6;
+#servicios ul {
+    padding-left: 20px;
+}
+
+#servicios ul li {
+    list-style-type: disc;
 }
 
 
-h2 {
-    color: #003366;
-    /* Azul oscuro */
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-section {
-    padding: 50px 20px;
-    background-color: #ffffff;
-    margin: 20px 0;
-}
-
-.about-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
 
 .about-card {
     background-color: #f0f0f0;
@@ -319,13 +272,15 @@ section {
     font-size: 1em;
     line-height: 1.6;
 }
+/* ////////////////////////END SERVICIOS////////////////////////////// */
 
 /* ///////////////////////////////////estilos seccion noossotros//////////////////////////// */
 
 /* Sección Sobre Nosotros */
 #nosotros {
     padding: 60px 20px;
-    background-color: #ffffff;
+    background: linear-gradient(to right,  rgb(2, 54, 151), white, rgb(2, 54, 151));
+
 }
 
 #nosotros h2 {
@@ -363,7 +318,6 @@ section {
     text-align: center;
     margin: auto;
     font-size: 1.5rem;
-
 }
 
 .about-card img {
@@ -389,7 +343,6 @@ section {
 
 .about-card ul li strong {
     color: #1E3A8A;
-
 }
 
 /* Animaciones */
@@ -398,7 +351,6 @@ section {
         opacity: 0;
         transform: translateY(20px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
@@ -407,6 +359,29 @@ section {
 
 .about-card {
     animation: fadeInUp 0.6s ease-out;
+}
+
+/* Elementos adicionales */
+.about-card p {
+    background-color: #E5E7EB;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Botones de acciones */
+.about-card a {
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #1E3A8A;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.about-card a:hover {
+    background-color: #162E6B;
 }
 
 /* /////////////////////////NOSOTROS END////////////////////////////// */
@@ -436,7 +411,25 @@ section {
     color: var(--text-color);
     background: linear-gradient(to right, white, rgb(2, 54, 151));
 }
-
+#contacto h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    position: relative;
+    /* display: inline-block; */
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+}
+/* #contacto h2::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background-color: #ffffff;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+} */
 .contact-wrapper {
     display: flex;
     gap: 20px;
@@ -563,15 +556,22 @@ section {
 
 /* /////////////////////END ESTILOS SECCION CONTACTOS////////////////////////////////// */
 footer {
-    background-color: #003366;
-    /* Azul oscuro */
-    color: #ffffff;
+    background: linear-gradient(to right, white, rgb(2, 54, 151));
+
     text-align: center;
     padding: 20px 0;
     margin-top: 20px;
+
+    /* Estilos para el texto degradado */
+
 }
+
 
 footer p {
     margin: 0;
+    /* background: linear-gradient(to right, rgb(2, 54, 151), rgb(255, 0, 0), rgb(0, 0, 0)); */
+    color: black;
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
     font-size: 1em;
 }
