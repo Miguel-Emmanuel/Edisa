@@ -1,50 +1,52 @@
-
-<?php   
+<?php
 require("header.php");
 ?>
-    <section id="inicio">
-        <!-- <div class="hero">
-            <h1>Líderes en la industria de la construcción</h1>
-            <p>Planeamos, ejecutamos y administramos proyectos con altos estándares de calidad.</p>
+    <!-- <section id="inicio" class="d-flex align-items-center">
+        <div class="container text-center">
+            <p class="lead text-gray mb-4">Liderando el camino en la construcción de calidad y servicio al cliente.</p>
+            <a href="#nosotros" class="btn btn-info btn-lg">Conoce más sobre nosotros</a> -->
+        </div>
+    <!-- </section> -->
 
-            <img src="img/arco4.jpg" width="" alt="">
-            <img src="img/casa.jpeg" width="" alt="">
-            <img src="img/pasillo.jpg" width="" alt=""><br>
-            <a href="#servicios" class="btn">Ver más</a>
-        </div> -->
-    </section>
 <section id="servicios" class="py-5 bg-secondary text-white">
     <div class="container">
         <h2 class="text-center mb-5">Nuestros Servicios</h2>
         <div class="row">
             <div class="col-md-4 mb-4">
+                <a href="servicios.php#modal_obra_civil">
                 <div class="card bg-light text-dark">
                     <img src="img/estructuras.jpeg" class="card-img-top" alt="Obra civil">
                     <div class="card-body">
                         <h3 class="card-title">Obra civil</h3>
-                        <p class="card-text">Desarrollamos y ejecutamos proyectos de construcción con alta calidad, asesorando en diseños de planos y materiales de construcción.</p>
+                        <!-- <p class="card-text">Desarrollamos y ejecutamos proyectos de construcción con alta calidad, asesorando en diseños de planos y materiales de construcción.</p> -->
                     </div>
+                </a>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
+            <a href="servicios.php#modal_exteriores">
                 <div class="card bg-light text-dark">
                     <img src="img/pasillo.jpg" class="card-img-top" alt="Acabado de interiores">
                     <div class="card-body">
-                        <h3 class="card-title">Acabado de interiores</h3>
-                        <p class="card-text">Contamos con equipos y sistemas de energía eficientes y sostenibles para proyectos residenciales, comerciales e industriales.</p>
+                        <h3 class="card-title">Acabado de interiores y Exteriores</h3>
+                        <!-- <p class="card-text">Contamos con equipos y sistemas de energía eficientes y sostenibles para proyectos residenciales, comerciales e industriales.</p> -->
                     </div>
                 </div>
+                </a>
             </div>
+
             <div class="col-md-4 mb-4">
+            <a href="servicios.php#modal_carpintero">
                 <div class="card bg-light text-dark">
                     <img src="img/madera1.jpeg" class="card-img-top" alt="Carpintería">
                     <div class="card-body">
                         <h3 class="card-title">Carpintería</h3>
-                        <p class="card-text">Desarrollamos y ejecutamos proyectos de carpintería con alta calidad, asesorando en diseños de planos y materiales de construcción.</p>
+                        <!-- <p class="card-text">Desarrollamos y ejecutamos proyectos de carpintería con alta calidad, asesorando en diseños de planos y materiales de construcción.</p> -->
                     </div>
                 </div>
+                </a>
             </div>
-            <div class="col-md-4 mb-4">
+            <!-- <div class="col-md-4 mb-4">
                 <div class="card bg-light text-dark">
                     <img src="img/techo.jpg" class="card-img-top" alt="Impermeabilización">
                     <div class="card-body">
@@ -86,7 +88,7 @@ require("header.php");
                     <img src="img/epoxico.jpg" class="card-img-top" alt="Acabado de interiores y Exteriores">
                     <div class="card-body">
                         <h3 class="card-title">Acabado de interiores y Exteriores</h3>
-                        <p class="card-text">Desarrollamos y ejecutamos proyectos de acabados estéticos y de calidad, asesorando en diseños y materiales de construcción:
+                        <p class="card-text">Desarrollamos y ejecutamos proyectos de acabados   éticos y de calidad, asesorando en diseños y materiales de construcción:
                             <ul>
                                 <li>Pisos epoxicos.</li>
                                 <li>Pisos de grado quirurjico.</li>
@@ -131,146 +133,150 @@ require("header.php");
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
+        <center>
+            <button onclick="window.location.href='servicios.php'" class="btn ">Ver más</button>
+        </center>
     </div>
 </section>
-
-
-    <section id="proyectos">
+<section id="proyectos">
+    <div id="proyectosCarrusel" class="carousel slide" data-ride="carousel">
         <h2>Proyectos</h2>
-        <div id="proyectosCarrusel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#proyectosCarrusel" data-slide-to="0" class="active"></li>
-                <li data-target="#proyectosCarrusel" data-slide-to="1"></li>
-                <li data-target="#proyectosCarrusel" data-slide-to="2"></li>
-                <li data-target="#proyectosCarrusel" data-slide-to="3"></li>
-                <li data-target="#proyectosCarrusel" data-slide-to="4"></li>
-                <li data-target="#proyectosCarrusel" data-slide-to="5"></li>
-                <li data-target="#proyectosCarrusel" data-slide-to="6"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/plaza_novum.jpg" class="d-block w-100" alt="Proyecto 1">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>PLAZA COMERCIAL NOVUM CUAUHNAHUAC</h5>
-                        <p>EXPERTOS EN ACABADOS INTERIORES Y EXTERIORES</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/residencial.jpg" class="d-block w-100" alt="Proyecto 2">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>DEPARTAMENTOS RESIDENCIALES           </h5>
-                        <p>EXPERTOS EN ACABADOS INTERIORES Y EXTERIORES
-                        </p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/parque_acuatico.jpg" class="d-block w-100" alt="Proyecto 3">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>PARQUE ACUATICO “MAYAN PALACE ACAPULCO” SISTEMA EPOXICO</h5>
-                        <p>EXPERTOS EN ACABADOS INTERIORES Y EXTERIORES.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/plaza_novum.png" class="d-block w-100" alt="Proyecto 3">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>IMPERMEABILIZACION PLAZA COMERCIAL “NOVUM” AHUATLAN,CUERNAVACA                        </h5>
-                        <p>EXPERTOS EN ACABADOS INTERIORES Y EXTERIORES.</p>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <img src="img/picsina.jpg" class="d-block w-100" alt="Proyecto 3">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>DESARROLLO HABITACIONAL LA CAMPIÑA CUERNAVACA MORELOS.                        </h5>
-                        <p>EXPERTOS EN ACABADOS INTERIORES Y EXTERIORES.</p>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <img src="img/plaza_inn.png" class="d-block w-100" alt="Proyecto 3">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>PLAZA INN BLUE- INSURGENTES.                        </h5>
-                        <p>EXPERTOS EN ACABADOS INTERIORES Y EXTERIORES.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="img/sistema_epo.png" class="d-block w-100" alt="Proyecto 3">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>SISTEMA EPOXICO WURTH MORELOS.                        </h5>
-                        <p>EXPERTOS EN ACABADOS INTERIORES Y EXTERIORES.</p>
-                    </div>
+        <ol class="carousel-indicators">
+            <li data-target="#proyectosCarrusel" data-slide-to="0" class="active"></li>
+            <li data-target="#proyectosCarrusel" data-slide-to="1"></li>
+            <li data-target="#proyectosCarrusel" data-slide-to="2"></li>
+            <li data-target="#proyectosCarrusel" data-slide-to="3"></li>
+            <li data-target="#proyectosCarrusel" data-slide-to="4"></li>
+            <li data-target="#proyectosCarrusel" data-slide-to="5"></li>
+            <li data-target="#proyectosCarrusel" data-slide-to="6"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/plaza_novum.jpg" class="d-block w-100" alt="Proyecto 1">
+                <div class="carousel-caption d-none d-md-block d-sm-block">
+                    <h5>PLAZA COMERCIAL NOVUM CUAUHNAHUAC</h5>
+                    <p>EXPERTOS EN ACABADOS INTERIORES Y EXTERIORES</p>
+                    <button class="align-item-center" id="proyecto-btn">
+                        <a href="proyectos_destacados.php" class="btn btn-custom">Ver más</a>
+                    </button>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#proyectosCarrusel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#proyectosCarrusel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Siguiente</span>
-            </a>
+            <div class="carousel-item">
+                <img src="img/residencial.jpg" class="d-block w-100" alt="Proyecto 2">
+                <div class="carousel-caption d-none d-md-block d-sm-block">
+                    <h5>DEPARTAMENTOS RESIDENCIALES</h5>
+                    <p>EXPERTOS EN ACABADOS INTERIORES Y EXTERIORES</p>
+                    <button class="align-item-center" id="proyecto-btn">
+                        <a href="proyectos_destacados.php" class="btn btn-custom">Ver más</a>
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/parque_acuatico.jpg" class="d-block w-100" alt="Proyecto 3">
+                <div class="carousel-caption d-none d-md-block d-sm-block">
+                    <h5>PARQUE ACUATICO “MAYAN PALACE ACAPULCO” SISTEMA EPOXICO</h5>
+                    <p>EXPERTOS EN ACABADOS INTERIORES Y EXTERIORES.</p>
+                    <button class="align-item-center" id="proyecto-btn">
+                        <a href="proyectos_destacados.php" class="btn btn-custom">Ver más</a>
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/plaza_novum.png" class="d-block w-100" alt="Proyecto 4">
+                <div class="carousel-caption d-none d-md-block d-sm-block">
+                    <h5>IMPERMEABILIZACION PLAZA COMERCIAL “NOVUM” AHUATLAN,CUERNAVACA</h5>
+                    <p>EXPERTOS EN ACABADOS INTERIORES Y EXTERIORES.</p>
+                    <button class="align-item-center" id="proyecto-btn">
+                        <a href="proyectos_destacados.php" class="btn btn-custom">Ver más</a>
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/picsina.jpg" class="d-block w-100" alt="Proyecto 5">
+                <div class="carousel-caption d-none d-md-block d-sm-block">
+                    <h5>DESARROLLO HABITACIONAL LA CAMPIÑA CUERNAVACA MORELOS.</h5>
+                    <p>EXPERTOS EN ACABADOS INTERIORES Y EXTERIORES.</p>
+                    <button class="align-item-center" id="proyecto-btn">
+                        <a href="proyectos_destacados.php" class="btn btn-custom">Ver más</a>
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/plaza_inn.png" class="d-block w-100" alt="Proyecto 6">
+                <div class="carousel-caption d-none d-md-block d-sm-block">
+                    <h5>PLAZA INN BLUE- INSURGENTES.</h5>
+                    <p>EXPERTOS EN ACABADOS INTERIORES Y EXTERIORES.</p>
+                    <button class="align-item-center" id="proyecto-btn">
+                        <a href="proyectos_destacados.php" class="btn btn-custom">Ver más</a>
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/sistema_epo.png" class="d-block w-100" alt="Proyecto 7">
+                <div class="carousel-caption d-none d-md-block d-sm-block">
+                    <h5>SISTEMA EPOXICO WURTH MORELOS.</h5>
+                    <p>EXPERTOS EN ACABADOS INTERIORES Y EXTERIORES.</p>
+                    <button class="align-item-center" id="proyecto-btn">
+                        <a href="proyectos_destacados.php" class="btn btn-custom">Ver más</a>
+                    </button>
+                </div>
+            </div>
         </div>
-    </section>
+        <a class="carousel-control-prev" href="#proyectosCarrusel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#proyectosCarrusel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+    </div>
+</section>
 
-    <section id="nosotros">
-    <h2>Sobre Nosotros</h2>
-    <div class="about-container">
-        <div class="about-card">
-            <h3>Misión</h3>
-            <img src="img/acrilico.png" alt="Misión">
-            <p>Construir obras basadas en la calidad y el servicio responsable a nuestros clientes, creciendo de forma rentable y segura, ofreciendo distintas modalidades para construir, asesoría en diseños de planos y materiales de construcción, obteniendo así el reconocimiento en nuestro sector mercado con clientes satisfechos.</p>
+
+<section id="nosotros" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5 text-light">Sobre Nosotros</h2>
+        <div class="intro-text mb-5 text-center text-light">
+            <p class="lead">En Construcciones EDISA, nos dedicamos a la excelencia en cada proyecto que emprendemos.
+            
+Somos una empresa con sede en Lerma de Villada, México.
+Estamos comprometidos con la creación, desarrollo y comercialización de proyectos de construcción cuyo principal objetivo es brindar a los clientes una mejor calidad de vida en el sector público y privado.
+ Contamos con profesionales y técnicos altamente experimentados para el desarrollo de los diferentes tipos de proyectos sean edificios industriales, comerciales y de apartamentos; vivienda residencial y popular...   </p>
         </div>
-        <div class="about-card">
-            <h3>Visión</h3>
-            <img src="img/tejado.jpeg" alt="Visión">
-            <p>Ser una empresa constructora reconocida por su liderazgo, confiabilidad, calidad y servicio al cliente, y por su presencia en el mercado local y nacional.</p>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                <button  onclick="window.location.href='nosotros.php'" >
+                    <img src="img/acrilico.png" class="card-img-top" alt="Misión">
+                    <div class="card-body">
+                        <h3 class="card-title">Misión</h3>
+                        <p class="card-text">Construir obras basadas en la calidad y el servicio responsable a nuestros clientes, creciendo de forma rentable y segura.</p>
+                    </div>
+                </button>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+            <a href="nosotros.php">
+                <div class="card">
+                    <img src="img/tejado.jpeg" class="card-img-top" alt="Visión">
+                    <div class="card-body">
+                        <h3 class="card-title">Visión</h3>
+                        <p class="card-text">Ser una empresa constructora reconocida por su liderazgo, confiabilidad, calidad y servicio al cliente.</p>
+                    </div>
+                </div>
+            </a>
+            </div>
         </div>
-        <div class="about-card">
-            <h3>Valores</h3>
-            <ul>
-                <li><strong>Innovación:</strong> Impulsamos el desarrollo de nuevas tecnologías y promovemos la mejora continua.</li>
-                <li><strong>Compromiso:</strong> Con el desarrollo personal y profesional de nuestros empleados, fomentando un ambiente de trabajo respetuoso y el trabajo en equipo.</li>
-                <li><strong>Calidad:</strong> Implementada en la entrega del proyecto, superando las expectativas de nuestros clientes.</li>
-                <li><strong>Servicio:</strong> Nos centramos en las necesidades del cliente, cumpliendo con las responsabilidades asignadas con la mayor satisfacción y ofreciendo una atención individualizada a cada cliente.</li>
-            </ul>
-        </div>
-        <div class="about-card">
-            <h3>Historia de la Empresa</h3>
-            <p>Nuestra empresa fue fundada en [año], inicialmente dedicada a [actividad principal]. Desde entonces, hemos crecido y nos hemos consolidado como líderes en el sector de la construcción en nuestra región.</p>
-        </div>
-        <div class="about-card">
-            <h3>Equipo Directivo</h3>
-            <p>Nuestro equipo directivo está formado por profesionales con amplia experiencia en la industria de la construcción. Conoce a nuestro equipo y sus logros:</p>
-            <!-- Aquí podrías añadir fotos y perfiles breves del equipo directivo -->
-        </div>
-        <div class="about-card">
-            <h3>Proyectos Destacados</h3>
-            <p>En nuestros [número] años de historia, hemos completado una amplia gama de proyectos, desde residenciales hasta comerciales e industriales. Destacamos por nuestra capacidad para llevar a cabo proyectos complejos y de alto perfil.</p>
-            <!-- Aquí podrías añadir imágenes miniaturas de algunos proyectos destacados -->
-        </div>
-        <div class="about-card">
-            <h3>Certificaciones y Reconocimientos</h3>
-            <p>Nuestra empresa cuenta con diversas certificaciones que garantizan nuestra calidad y compromiso con el medio ambiente y la seguridad en el trabajo. Estas incluyen [lista de certificaciones]. Además, hemos sido reconocidos por [menciona algunos reconocimientos recibidos].</p>
-            <!-- Aquí podrías añadir logotipos de las certificaciones y mencionar los reconocimientos recibidos -->
-        </div>
-        <div class="about-card">
-            <h3>Testimonios de Clientes</h3>
-            <p>La satisfacción del cliente es nuestra prioridad. Escucha lo que nuestros clientes tienen que decir sobre trabajar con nosotros:</p>
-            <!-- Aquí podrías añadir algunos testimonios reales de clientes -->
-        </div>
-        <div class="about-card">
-            <h3>Filosofía y Compromiso</h3>
-            <p>Nuestra filosofía se basa en [describe brevemente la filosofía de la empresa, por ejemplo, compromiso con la excelencia, responsabilidad social, etc.]. Estamos comprometidos a [menciona algún compromiso específico, como la sostenibilidad o la innovación].</p>
-        </div>
-        <div class="about-card">
-            <h3>Galería de Imágenes</h3>
-            <p>Explora nuestras instalaciones, nuestro equipo en acción y algunos momentos destacados de eventos de la empresa:</p>
-            <!-- Aquí podrías añadir una galería de imágenes relevantes -->
+        <div class="text-center">
+            <a href="nosotros.php" class="btn">Conoce más sobre nosotros</a>
         </div>
     </div>
 </section>
+
+
 
 <section id="contacto">
     <h2>Contacto</h2>
@@ -279,7 +285,7 @@ require("header.php");
             <img src="img/logo.png" alt="Logo" class="logo">
         </div>
         <div class="column form-column">
-            <form class="contact-form" action="path/to/your/form/handler" method="POST">
+            <form class="contact-form" action="index.php" method="POST">
                 <div class="form-group">
                     <label for="name">Nombre</label>
                     <input type="text" id="name" name="name" required>
@@ -325,11 +331,10 @@ require("header.php");
     <div class="map-container">
         <iframe width="100%" height="400px" frameborder="0" style="border:0;" src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d1882.9428059950826!2d-99.506862!3d19.28734!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDE3JzE0LjIiTiA5OcKwMzAnMjMuNCJX!5e0!3m2!1ses!2smx!4v1719953871982!5m2!1ses!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+    <footer>
+    <p>&copy; 2024 PROYECTOS Y CONSTRUCCIÓN EDISA S.A DE C.V. Todos los derechos reservados.</p>
+</footer>
 </section>
 
 
-
-<footer>
-        <p>&copy; 2024 PROYECTOS Y CONSTRUCCIÓN EDISA S.A DE C.V. Todos los derechos reservados.</p>
-    </footer>
 

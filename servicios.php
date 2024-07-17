@@ -1,38 +1,42 @@
-<?php require("header.php") ?>
+<?php require("header.php");
+?>
 
+<link rel="stylesheet" href="servicios.css">
 <div id="servicios" class="py-5 bg-secondary text-white">
     <div class="container">
         <h2 class="text-center mb-5">Nuestros Servicios</h2>
         <div class="row">
+        <div class="col-md-4 mb-4">
+    <div class="card bg-light text-dark text-decoration-none" onclick="modal_obra_civil('obra_civil/')">
+        <img src="img/estructuras.jpeg" class="card-img-top" alt="Obra civil">
+        <div class="card-body">
+            <h3 class="card-title">Obra civil</h3>
+            <p class="card-text">Desarrollamos y ejecutamos proyectos de construcción con alta calidad, asesorando en diseños de planos y materiales de construcción.</p>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="col-md-4 mb-4">
+    <div class="card bg-light text-dark" onclick="modal_interiores('canceleria/')">
+        <img src="img/pasillo.jpg" class="card-img-top" alt="Acabado de interiores">
+            <h3 class="card-title">Acabado de interiores</h3>
+            <p class="card-text">Contamos con equipos y sistemas de energía eficientes y sostenibles para proyectos residenciales, comerciales e industriales.</p>
+        </div>
+    </div>
+</div> -->
+
+<div class="col-md-4 mb-4">
+    <div class="card bg-light text-dark" onclick="modal_carpintero('carpintero/')">
+        <img src="img/madera1.jpeg" class="card-img-top" alt="Carpintería">
+        <div class="card-body">
+            <h3 class="card-title">Carpintería</h3>
+            <p class="card-text">Desarrollamos y ejecutamos proyectos de carpintería con alta calidad, asesorando en diseños de planos y materiales de construcción.</p>
+        </div>
+    </div>
+</div>
+
             <div class="col-md-4 mb-4">
-                <div class="card bg-light text-dark">
-                    <img src="img/estructuras.jpeg" class="card-img-top" alt="Obra civil">
-                    <div class="card-body">
-                        <h3 class="card-title">Obra civil</h3>
-                        <p class="card-text">Desarrollamos y ejecutamos proyectos de construcción con alta calidad, asesorando en diseños de planos y materiales de construcción.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card bg-light text-dark">
-                    <img src="img/pasillo.jpg" class="card-img-top" alt="Acabado de interiores">
-                    <div class="card-body">
-                        <h3 class="card-title">Acabado de interiores</h3>
-                        <p class="card-text">Contamos con equipos y sistemas de energía eficientes y sostenibles para proyectos residenciales, comerciales e industriales.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card bg-light text-dark">
-                    <img src="img/madera1.jpeg" class="card-img-top" alt="Carpintería">
-                    <div class="card-body">
-                        <h3 class="card-title">Carpintería</h3>
-                        <p class="card-text">Desarrollamos y ejecutamos proyectos de carpintería con alta calidad, asesorando en diseños de planos y materiales de construcción.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card bg-light text-dark">
+                <div class="card bg-light text-dark" onclick="modal_impermeable('impermeables/')">>
                     <img src="img/techo.jpg" class="card-img-top" alt="Impermeabilización">
                     <div class="card-body">
                         <h3 class="card-title">Impermeabilización</h3>
@@ -49,7 +53,7 @@
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card bg-light text-dark">
+                <div class="card bg-light text-dark" onclick="modal_herreria('herrero/')">>
                     <img src="img/domo1.jpeg" class="card-img-top" alt="Herrería">
                     <div class="card-body">
                         <h3 class="card-title">Herrería</h3>
@@ -69,7 +73,7 @@
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card bg-light text-dark">
+                <div class="card bg-light text-dark" onclick="modal_exteriores('exteriores/')">>
                     <img src="img/epoxico.jpg" class="card-img-top" alt="Acabado de interiores y Exteriores">
                     <div class="card-body">
                         <h3 class="card-title">Acabado de interiores y Exteriores</h3>
@@ -83,7 +87,7 @@
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card bg-light text-dark">
+                <div class="card bg-light text-dark" onclick="modal_tablaroca('tablaroca/')" >
                     <img src="img/arco4.jpg" class="card-img-top" alt="Tabla Roca">
                     <div class="card-body">
                         <h3 class="card-title">Tabla Roca</h3>
@@ -97,11 +101,11 @@
                                 <li>Reformas y Renovaciones</li>
                             </ul>
                         </p>
-                    </div>
+                </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card bg-light text-dark">
+                <div class="card bg-light text-dark" onclick="modal_canceleria('canceleria/')">
                     <img src="img/aluminio.png" class="card-img-top" alt="Canceleria y aluminio">
                     <div class="card-body">
                         <h3 class="card-title">Canceleria y aluminio</h3>
@@ -122,8 +126,12 @@
         </div>
     </div>
 </div>
-<footer>
-        <p>&copy; 2024 Constructora. Todos los derechos reservados.</p>
-    </footer>
-</body>
+
+<?php 
+
+
+require("modales_servicios.js");
+
+require("footer.php");
+?>
 </html>

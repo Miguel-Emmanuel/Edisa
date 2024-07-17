@@ -1,0 +1,5 @@
+h2{
+    background-color: rgba(255, 255, 255, 0) !important; /* Blanco semi-transparente */
+    background-image: linear-gradient(to right,black, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)) !important;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8) !important;
+}
