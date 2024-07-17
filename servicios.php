@@ -2,7 +2,7 @@
 ?>
 
 <link rel="stylesheet" href="servicios.css">
-<div id="servicios" class="py-5 bg-secondary text-white">
+<div id="servicios" class="py-5  text-white">
     <div class="container">
         <h2 class="text-center mb-5">Nuestros Servicios</h2>
         <div class="row">

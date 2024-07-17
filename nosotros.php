@@ -3,7 +3,7 @@ require("header.php");
 
 ?>  
 
-<section id="nosotros" class="py-5 bg-light">
+<section id="nosotros" class="py-5 ">
     <div class="container">
         <h2 class="text-center mb-5">Sobre Nosotros</h2>
         <div class="about-container">

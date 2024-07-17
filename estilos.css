@@ -1,16 +1,15 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* background-color: #c9d2f8;  */
-    background-image: url('img/logo.png') !important;
-    /* background: rgba(0, 0, 0, 0.197) !important; */
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-image: url('img/logo-canva.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed; /* Mantiene el fondo fijo al hacer scroll */
+    }
 
 header h1 {
     text-align: center;
@@ -22,7 +21,7 @@ header h1 {
 
 header {
     /* background: linear-gradient(to right, white,  rgb(2, 54, 151)),  */
-    background: url('img/residencial.jpg') no-repeat center center/cover !important;
+    /* background: url('img/logo-canva.png') no-repeat center center/cover !important; */
     color: rgba(255, 251, 251, 0.918);
     padding: 15px;
     text-align: center;
@@ -248,8 +247,10 @@ section h2 {
 /* //////////////////////////////END-INICIO/////////////////////////////////////////////////////// */
 /* /////////////////////SERVICIOS/////////////////////// */
 #servicios {
-   background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(184, 187, 190, 0.7)),
-                url('img/residencial.jpg') no-repeat center center/cover;
+   /* background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(184, 187, 190, 0.7)),
+                url('img/logo-canva.png') no-repeat center center/cover; */
+    /* background: url('img/logo-canva.png') no-repeat center center/cover !important; */
+
     color: white;
     padding: 60px 0;
 }
@@ -361,7 +362,7 @@ text-align: center;
 /* ////////////////////////END SERVICIOS////////////////////////////// */
 /* ///////////////////////////////////ESTILOS PROYECTOS//////////////////////////// */
 #proyectos{
-    background: url('img//logo-canva.png') no-repeat center center/cover;
+    /* background: url('img/logo-canva.png') no-repeat center center/cover; */
     padding-top: 20px;
 
 }
@@ -405,7 +406,7 @@ text-align: center;
 /* Sección Sobre Nosotros */
 #nosotros {
     padding: 60px 20px;
-    background: url('img/obra.jpg') no-repeat center center/cover !important;
+    /* background: url('img/logo-canva.png') no-repeat center center/cover !important; */
 }
 .lead{
     background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
@@ -568,7 +569,7 @@ text-align: center;
     padding: 40px;
     font-family: Arial, sans-serif;
     color:  #fff;
-    background: url('img/logo-canva.png') no-repeat center center/cover;
+    /* background: url('img/logo-canva.png') no-repeat center center/cover; */
 }
 #contacto h2 {
     font-size: 2.5rem;

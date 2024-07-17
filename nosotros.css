@@ -1,10 +1,15 @@
 /* Estilos generales */
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    background-image: url('img/logo-canva.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Mantiene el fondo fijo al hacer scroll */
 }
 
 header {

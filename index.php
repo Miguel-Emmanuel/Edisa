@@ -8,7 +8,7 @@ require("header.php");
         </div>
     <!-- </section> -->
 
-<section id="servicios" class="py-5 bg-secondary text-white">
+<section id="servicios" class="py-5 text-white">
     <div class="container">
         <h2 class="text-center mb-5">Nuestros Servicios</h2>
         <div class="row">
